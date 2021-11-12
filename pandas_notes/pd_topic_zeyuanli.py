@@ -3,6 +3,7 @@
 # Stats 507, Fall 2021
 # 
 # Zeyuan Li
+# zeyuanli@umich.edu
 # 10/19/2021
 # 
 # 
