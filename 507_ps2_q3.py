@@ -25,11 +25,11 @@ DEMO_2015_2016['cohort'] = '2015-2016'
 DEMO_2017_2018['cohort'] = '2017-2018'
 DEMO = pd.concat([DEMO_2011_2012, DEMO_2013_2014, DEMO_2015_2016, DEMO_2017_2018], axis=0)
 DEMO_part = DEMO[['SEQN', 'RIDAGEYR', 'RIDRETH3', 'DMDEDUC2', 'DMDMARTL', 'RIDSTATR', 'SDMVPSU',
-               'SDMVSTRA','WTMEC2YR', 'WTINT2YR','cohort']]
+               'SDMVSTRA','WTMEC2YR', 'WTINT2YR','RIAGENDR','cohort']]
 DEMO_part.columns = ['unique ids', 'age', 'race and ethnicity', 'education', 'marital status',
                    'Interview/Examination status', 'Masked variance pseudo-PSU',
                    'Masked variance pseudo-stratum','Full sample 2 year MEC exam weight',
-                   'Full sample 2 year interview weight','cohort']
+                   'Full sample 2 year interview weight','genderR','cohort']
 
 #create dictionary for categorical variables
 race_dict = { 1: 'Mexican American', 
